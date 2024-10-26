@@ -1,0 +1,38 @@
+.header {
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.search-container {
+  display: flex;
+  margin: 2%;
+}
+.search-box {
+  width: 30%;
+  height: 30px;
+  margin: 0 auto;
+  border: 2px solid black;
+  border-radius: 7px;
+  transition: all 0.3s ease-in-out;
+
+  &:focus {
+    outline: none;
+    border-color: plum;
+    width: 50%;
+  }
+}
+
+.uni-list-container {
+  display: flex;
+  margin: 10px 50px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.uni-list {
+  width: 30%;
+    border: 1px solid #ccc;
+    padding: 20px;
+}
