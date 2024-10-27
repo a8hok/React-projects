@@ -1,6 +1,10 @@
-function list({ uniInfo }) {
+function list({ uniInfo, filteredInfo }) {
+  if (filteredInfo.length > 0) {
+    uniInfo = filteredInfo;
+  }
   return (
     <div className="uni-list-container">
+      {filteredInfo.length === 0 && <p className='w-100'>No search results</p>}
       {uniInfo.map((uni, index) => (
         <div className="uni-list" key={index}>
           <div className="uni-name">
