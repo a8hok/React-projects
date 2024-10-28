@@ -8,7 +8,7 @@ import {
 } from "react";
 import "./App.css";
 import Search from "./Components/Search";
-import { apiUrl, limit } from "./Utils/constants";
+import { apiUrl, limit } from "./Utils/Constants";
 
 function App() {
   const [uniInfo, setUniInfo] = useState([]);

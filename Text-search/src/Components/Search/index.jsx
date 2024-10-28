@@ -6,7 +6,6 @@ function Search({ searchResult }) {
     state: "",
   });
   function handleChange(e) {
-    // setSearchOptions({ ...searchOptions, [e.target.name]: e.target.value });
     setSearchOptions((prevOptions) => ({
       ...prevOptions,
       [e.target.name]: e.target.value,
